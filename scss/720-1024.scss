@@ -1,0 +1,52 @@
+@media only screen and (min-width: 720px) {
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        nav {
+            width: 40%;
+        }
+    }
+
+    main {
+        margin-left: 40px;
+        margin-right: 40px;
+        button:hover {
+            text-decoration: underline;
+        }
+
+        h2:hover {
+            color: $orange;
+        }
+
+    }
+
+    #four-articles, #more-articles {
+        @include flex-wrap;
+
+        :nth-of-type(even) {
+            margin-left: 10px;
+        }
+        :nth-of-type(odd) {
+            margin-right: 10px;
+        }
+        article {
+            flex: 1 1 40%;
+        }
+    }
+
+    #documents {
+        justify-content: space-between;
+        width: 20%;
+        font-size: 12px;
+    }
+
+    #social-networks-container {
+        justify-content: space-evenly;
+        font-size: 12px;
+
+        img:hover {
+            transform: scale(1.5) perspective(1px);
+        }
+    }
+}

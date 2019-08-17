@@ -1,0 +1,19 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin grey-background {
+    background-color: $grey-background-color;
+    margin: 0 -30px;
+}
+
+@mixin a-no-default {
+    text-decoration: none;
+    color: $dark-grey;
+}

@@ -1,21 +1,32 @@
+@charset 'utf-8';
+
+@import "./variable.scss";
+@import "./mixins.scss";
+
 @media only screen and (min-width: 720px) {
-    header {
+    .header {
         margin-left: 20px;
         margin-right: 20px;
 
-        nav {
+        .nav {
             width: 40%;
+            color: $dark-grey;
+        }
+
+        .nav-li:hover {
+            text-decoration: underline;
         }
     }
 
-    main {
+    .main {
         margin-left: 40px;
         margin-right: 40px;
-        button:hover {
+
+        .leave-comment-btn:hover {
             text-decoration: underline;
         }
 
-        h2:hover {
+        .h2:hover {
             color: $orange;
         }
 
@@ -30,22 +41,38 @@
         :nth-of-type(odd) {
             margin-right: 10px;
         }
-        article {
+        .article {
             flex: 1 1 40%;
         }
     }
 
-    #documents {
+    #sign-up {
+        .send-icon:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    #load-articles {
+        .load-more-btn:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .terms-and-privacy-container {
         justify-content: space-between;
         width: 20%;
         font-size: 12px;
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
     }
 
-    #social-networks-container {
+    .social-networks-container {
         justify-content: space-evenly;
         font-size: 12px;
 
-        img:hover {
+        .social-network-icon:hover {
             transform: scale(1.5) perspective(1px);
         }
     }
